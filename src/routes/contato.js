@@ -3,8 +3,8 @@ import { criaContato, listarContatos, atualizaContato, deletaContato, contatoId 
 
 export const rotasContato = Router();
 
-rotasContato.post("/contato", criaContato);
-rotasContato.get("/contatos", listarContatos);
-rotasContato.get("/contatos/:id", contatoId);
-rotasContato.put("/contatos/:id", atualizaContato);
-rotasContato.delete("/contatos/:id", deletaContato);
+rotasContato.post("/cadastro", criaContato);
+rotasContato.get("/", listarContatos);
+rotasContato.get("/:id", contatoId);
+rotasContato.put("/:id", atualizaContato);
+rotasContato.delete("/:id", deletaContato);

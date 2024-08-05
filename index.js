@@ -1,6 +1,7 @@
 import express from "express";
 import {config} from "dotenv";
 config();
+import { rotasUsuario } from "./src/routes/usuario.js";
 import { rotasContato } from "./src/routes/contato.js";
 import mongoose from "mongoose";
 
